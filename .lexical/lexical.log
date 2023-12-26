@@ -129,3 +129,773 @@ Shutdown: 5000
 Type: :worker
 00:08:44.084 [info] Lexical Initialized
 00:08:44.921 [info] Compiled islands_engine in 914 ms
+00:12:18.333 [info] opened file:///home/stryderjzw/islands_engine/lib/islands_engine/application.ex
+00:12:24.645 [info] Resolved entity: {:module, Application}
+00:12:52.313 [warn] Could not resolve hover request, got: {:error, {:unsupported, {:local_or_var, ~c"name"}}}
+00:14:03.160 [info] opened file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex
+00:14:09.364 [info] opened file:///home/stryderjzw/islands_engine/lib/islands_engine/application.ex
+00:14:17.519 [info] opened file:///home/stryderjzw/islands_engine/lib/islands_engine/application.ex
+00:14:21.335 [info] Resolved entity: {:module, MyModule}
+00:14:21.349 [warn] Could not resolve hover request, got: {:error, :no_doc}
+00:14:22.790 [warn] Could not resolve hover request, got: {:error, {:unsupported, {:local_or_var, ~c"alias"}}}
+00:14:23.303 [info] Resolved entity: {:module, MyModule}
+00:14:23.314 [warn] Could not resolve hover request, got: {:error, :no_doc}
+00:14:24.149 [info] Resolved entity: {:module, MyModule}
+00:14:24.156 [warn] Could not resolve hover request, got: {:error, :no_doc}
+00:14:25.650 [info] Completion for %{line: 1, character: 12, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "defmodule I do", "\n", 1, true}, document_line_count: 3}
+00:14:27.657 [info] Completion for %{line: 1, character: 24, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "defmodule IslandEngine. do", "\n", 1, true}, document_line_count: 3}
+00:14:30.890 [info] Compiled islands_engine in 1.3 seconds
+00:14:31.983 [info] Resolved entity: {:module, IslandEngine.Coordinate}
+00:14:31.990 [warn] Could not resolve hover request, got: {:error, :no_doc}
+00:14:33.073 [info] Local completions are [%{name: "Coordinate", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Module, summary: "", full_name: "IslandEngine.Coordinate"}]
+00:14:33.139 [info] Emitting completions: [#Protocol.Types.Completion.Item<[label: "Coordinate", kind: :module, detail: "IslandEngine.Coordinate", text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 18,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine. do..."(3 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 1, character: 24, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "defmodule IslandEngine. do", "\n", 1, true}, document_line_count: 3}, end: %{line: 1, character: 24, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "defmodule IslandEngine. do", "\n", 1, true}, document_line_count: 3}, __struct__: LXical.Document.Range}, text: "Coordinate", __struct__: LXical.Document.Edit}}, sort_text: "079_Coordinate"]>]
+00:14:51.640 [info] Completion for %{line: 4, character: 4, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 5}
+00:14:52.048 [info] Local completions are [%{name: "@after_compile", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@after_verify", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@before_compile", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@behaviour", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@callback", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@compile", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@deprecated", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@derive", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@dialyzer", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@doc", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@enforce_keys", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@external_resource", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@fallback_to_any", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@file", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@impl", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@macrocallback", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@moduledoc", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@on_definition", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@on_load", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@opaque", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@optional_callbacks", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@spec", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@struct", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@type", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@typedoc", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@typep", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@vsn", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{label: "@doc \"\"\"\"\"\"", priority: 13, __struct__: LXical.RemoteControl.Completion.Candidate.Snippet, kind: :snippet, documentation: "Documents a function/macro/callback", snippet: "doc \"\"\"\n$0\n\"\"\"", detail: "module attribute snippet", filter_text: "doc"}, %{label: "@moduledoc \"\"\"\"\"\"", priority: 13, __struct__: LXical.RemoteControl.Completion.Candidate.Snippet, kind: :snippet, documentation: "Documents a module", snippet: "moduledoc \"\"\"\n$0\n\"\"\"", detail: "module attribute snippet", filter_text: "moduledoc"}, %{label: "@typedoc \"\"\"\"\"\"", priority: 13, __struct__: LXical.RemoteControl.Completion.Candidate.Snippet, kind: :snippet, documentation: "Documents a type specification", snippet: "typedoc \"\"\"\n$0\n\"\"\"", detail: "module attribute snippet", filter_text: "typedoc"}, %{label: "@doc false", priority: 15, __struct__: LXical.RemoteControl.Completion.Candidate.Snippet, kind: :snippet, documentation: "Marks this function/macro/callback as internal", snippet: "doc false", detail: "module attribute snippet", filter_text: "doc"}, %{label: "@moduledoc false", priority: 15, __struct__: LXical.RemoteControl.Completion.Candidate.Snippet, kind: :snippet, documentation: "Marks this module as internal", snippet: "moduledoc false", detail: "module attribute snippet", filter_text: "moduledoc"}, %{label: "@typedoc false", priority: 15, __struct__: LXical.RemoteControl.Completion.Candidate.Snippet, kind: :snippet, documentation: "Marks this type specification as internal", snippet: "typedoc false", detail: "module attribute snippet", filter_text: "typedoc"}]
+00:14:53.026 [info] Emitting completions: [#Protocol.Types.Completion.Item<[label: "@after_compile", kind: :constant, detail: "module attribute", text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 31,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(5 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 4, character: 3, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 5}, end: %{line: 4, character: 4, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 5}, __struct__: LXical.Document.Range}, text: "@after_compile", __struct__: LXical.Document.Edit}}, sort_text: "099_@after_compile"]>, #Protocol.Types.Completion.Item<[label: "@after_verify", kind: :constant, detail: "module attribute", text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 31,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(5 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 4, character: 3, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 5}, end: %{line: 4, character: 4, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 5}, __struct__: LXical.Document.Range}, text: "@after_verify", __struct__: LXical.Document.Edit}}, sort_text: "099_@after_verify"]>, #Protocol.Types.Completion.Item<[label: "@before_compile", kind: :constant, detail: "module attribute", text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 31,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(5 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 4, character: 3, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 5}, end: %{line: 4, character: 4, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 5}, __struct__: LXical.Document.Range}, text: "@before_compile", __struct__: LXical.Document.Edit}}, sort_text: "099_@before_compile"]>, #Protocol.Types.Completion.Item<[label: "@behaviour", kind: :constant, detail: "module attribute", text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 31,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(5 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 4, character: 3, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 5}, end: %{line: 4, character: 4, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 5}, __struct__: LXical.Document.Range}, text: "@behaviour", __struct__: LXical.Document.Edit}}, sort_text: "099_@behaviour"]>, #Protocol.Types.Completion.Item<[label: "@callback", kind: :constant, detail: "module attribute", text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 31,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(5 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15. (truncated)
+00:14:55.293 [info] Emitting completions: []
+00:14:56.288 [info] Emitting completions: []
+00:14:56.993 [info] Emitting completions: []
+00:14:57.194 [info] Emitting completions: []
+00:15:01.635 [info] Emitting completions: []
+00:15:07.649 [info] Emitting completions: []
+00:15:08.931 [info] Emitting completions: []
+00:15:26.620 [info] opened file:///home/stryderjzw/islands_engine/lib/islands_engine/application.ex
+00:15:48.003 [info] opened file:///home/stryderjzw/islands_engine/lib/islands_engine/application.ex
+00:16:00.221 [info] Completion for %{line: 9, character: 12, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "    {:ok, %C{row: row, col: col}}", "\n", 9, true}, document_line_count: 11}
+00:16:00.370 [info] Local completions are [%{name: "Calendar", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Behaviour, summary: "This module defines the responsibilities for working with\ncalendars, dates, times and datetimes in Elixir.", full_name: "Calendar"}, %{name: "CaseClauseError", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Exception, summary: "", full_name: "CaseClauseError"}, %{name: "Code", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Module, summary: "Utilities for managing code compilation, code evaluation, and code loading.", full_name: "Code"}, %{name: "Collectable", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Protocol, summary: "A protocol to traverse data structures.", full_name: "Collectable"}, %{name: "CompileError", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Exception, summary: "", full_name: "CompileError"}, %{name: "CondClauseError", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Exception, summary: "", full_name: "CondClauseError"}, %{name: "Config", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Module, summary: "A simple keyword-based configuration API.", full_name: "Config"}]
+00:16:00.374 [info] Emitting completions: []
+00:16:08.265 [info] Compiled islands_engine in 75 ms
+00:16:33.620 [info] Completion for %{line: 4, character: 4, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 12}
+00:16:33.731 [info] Local completions are [%{name: "@@", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@after_compile", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@after_verify", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@before_compile", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@behaviour", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@callback", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@compile", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@deprecated", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@derive", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@dialyzer", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@doc", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@enforce_keys", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@external_resource", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@fallback_to_any", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@file", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@impl", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@macrocallback", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@moduledoc", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@on_definition", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@on_load", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@opaque", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@optional_callbacks", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@spec", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@struct", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@type", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@typedoc", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@typep", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{name: "@vsn", __struct__: LXical.RemoteControl.Completion.Candidate.ModuleAttribute}, %{label: "@doc \"\"\"\"\"\"", priority: 13, __struct__: LXical.RemoteControl.Completion.Candidate.Snippet, kind: :snippet, documentation: "Documents a function/macro/callback", snippet: "doc \"\"\"\n$0\n\"\"\"", detail: "module attribute snippet", filter_text: "doc"}, %{label: "@moduledoc \"\"\"\"\"\"", priority: 13, __struct__: LXical.RemoteControl.Completion.Candidate.Snippet, kind: :snippet, documentation: "Documents a module", snippet: "moduledoc \"\"\"\n$0\n\"\"\"", detail: "module attribute snippet", filter_text: "moduledoc"}, %{label: "@typedoc \"\"\"\"\"\"", priority: 13, __struct__: LXical.RemoteControl.Completion.Candidate.Snippet, kind: :snippet, documentation: "Documents a type specification", snippet: "typedoc \"\"\"\n$0\n\"\"\"", detail: "module attribute snippet", filter_text: "typedoc"}, %{label: "@doc false", priority: 15, __struct__: LXical.RemoteControl.Completion.Candidate.Snippet, kind: :snippet, documentation: "Marks this function/macro/callback as internal", snippet: "doc false", detail: "module attribute snippet", filter_text: "doc"}, %{label: "@moduledoc false", priority: 15, __struct__: LXical.RemoteControl.Completion.Candidate.Snippet, kind: :snippet, documentation: "Marks this module as internal", snippet: "moduledoc false", detail: "module attribute snippet", filter_text: "moduledoc"}, %{label: "@typedoc false", priority: 15, __struct__: LXical.RemoteControl.Completion.Candidate.Snippet, kind: :snippet, documentation: "Marks this type specification as internal", snippet: "typedoc false", detail: "module attribute snippet", filter_text: "typedoc"}]
+00:16:34.817 [info] Emitting completions: [#Protocol.Types.Completion.Item<[label: "@@", kind: :constant, detail: "module attribute", text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 124,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 4, character: 3, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 12}, end: %{line: 4, character: 4, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 12}, __struct__: LXical.Document.Range}, text: "@@", __struct__: LXical.Document.Edit}}, sort_text: "099_@@"]>, #Protocol.Types.Completion.Item<[label: "@after_compile", kind: :constant, detail: "module attribute", text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 124,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 4, character: 3, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 12}, end: %{line: 4, character: 4, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 12}, __struct__: LXical.Document.Range}, text: "@after_compile", __struct__: LXical.Document.Edit}}, sort_text: "099_@after_compile"]>, #Protocol.Types.Completion.Item<[label: "@after_verify", kind: :constant, detail: "module attribute", text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 124,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 4, character: 3, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 12}, end: %{line: 4, character: 4, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 12}, __struct__: LXical.Document.Range}, text: "@after_verify", __struct__: LXical.Document.Edit}}, sort_text: "099_@after_verify"]>, #Protocol.Types.Completion.Item<[label: "@before_compile", kind: :constant, detail: "module attribute", text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 124,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 4, character: 3, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 12}, end: %{line: 4, character: 4, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @", "\n", 4, true}, document_line_count: 12}, __struct__: LXical.Document.Range}, text: "@before_compile", __struct__: LXical.Document.Edit}}, sort_text: "099_@before_compile"]>, #Protocol.Types.Completion.Item<[label: "@behaviour", kind: :constant, detail: "module attribute", text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 124,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) li (truncated)
+00:16:34.934 [info] Completion for %{line: 4, character: 11, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @board_r", "\n", 4, true}, document_line_count: 12}
+00:16:34.948 [info] Local completions are []
+00:16:34.948 [info] Emitting completions: []
+00:16:35.052 [info] Completion for %{line: 4, character: 12, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @board_ra", "\n", 4, true}, document_line_count: 12}
+00:16:35.116 [info] Local completions are []
+00:16:35.116 [info] Emitting completions: []
+00:16:35.257 [info] Completion for %{line: 4, character: 14, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @board_rang", "\n", 4, true}, document_line_count: 12}
+00:16:35.276 [info] Local completions are []
+00:16:35.276 [info] Emitting completions: []
+00:16:35.369 [info] Completion for %{line: 4, character: 15, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @board_range", "\n", 4, true}, document_line_count: 12}
+00:16:35.390 [info] Local completions are []
+00:16:35.390 [info] Emitting completions: []
+00:16:36.068 [info] Emitting completions: []
+00:16:36.205 [info] Completion for %{line: 4, character: 19, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  @board_range 1..", "\n", 4, true}, document_line_count: 12}
+00:16:44.218 [info] Emitting completions: []
+00:16:47.135 [info] Completion for %{line: 9, character: 27, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when r do", "\n", 9, true}, document_line_count: 12}
+00:16:47.330 [info] Local completions are [%{name: "row", __struct__: LXical.RemoteControl.Completion.Candidate.Variable}, %{arity: 2, name: "rem", type: :function, origin: "Kernel", spec: "@spec rem(integer, neg_integer | pos_integer) :: integer", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["dividend", "divisor"]}, %{arity: 1, name: "round", type: :function, origin: "Kernel", spec: "@spec round(number) :: integer", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["number"]}, %{arity: 1, name: "raise", type: :macro, origin: "Kernel", spec: "", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Macro, visibility: :public, argument_names: ["message"]}, %{arity: 2, name: "raise", type: :macro, origin: "Kernel", spec: "", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Macro, visibility: :public, argument_names: ["exception", "attributes"]}, %{arity: 2, name: "reraise", type: :macro, origin: "Kernel", spec: "", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Macro, visibility: :public, argument_names: ["message", "stacktrace"]}, %{arity: 3, name: "reraise", type: :macro, origin: "Kernel", spec: "", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Macro, visibility: :public, argument_names: ["exception", "attributes", "stacktrace"]}, %{arity: 1, name: "receive", type: :macro, origin: "Kernel.SpecialForms", spec: "", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Macro, visibility: :public, argument_names: ["args"]}, %{arity: 2, name: "require", type: :macro, origin: "Kernel.SpecialForms", spec: "", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Macro, visibility: :public, argument_names: ["module", "opts"]}]
+00:16:47.688 [info] Emitting completions: [#Protocol.Types.Completion.Item<[label: "row", kind: :variable, detail: "row", text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 148,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 9, character: 26, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when r do", "\n", 9, true}, document_line_count: 12}, end: %{line: 9, character: 27, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when r do", "\n", 9, true}, document_line_count: 12}, __struct__: LXical.Document.Range}, text: "row", __struct__: LXical.Document.Edit}}, sort_text: "099_row"]>, #Protocol.Types.Completion.Item<[label: "rem(dividend, divisor)", kind: :function, text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 148,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 9, character: 26, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when r do", "\n", 9, true}, document_line_count: 12}, end: %{line: 9, character: 27, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when r do", "\n", 9, true}, document_line_count: 12}, __struct__: LXical.Document.Range}, text: "rem(${1:dividend}, ${2:divisor})", __struct__: LXical.Document.Edit}}, insert_text_format: :snippet, sort_text: "094_rem:002"]>, #Protocol.Types.Completion.Item<[label: "round(number)", kind: :function, text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 148,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 9, character: 26, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when r do", "\n", 9, true}, document_line_count: 12}, end: %{line: 9, character: 27, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when r do", "\n", 9, true}, document_line_count: 12}, __struct__: LXical.Document.Range}, text: "round(${1:number})", __struct__: LXical.Document.Edit}}, insert_text_format: :snippet, sort_text: "094_round:001"]>, #Protocol.Types.Completion.Item<[label: "raise(message)", kind: :function, text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 148,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 9, character: 26, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when r do", "\n", 9, true}, document_line_count: 12}, end: %{line: 9, character: 27, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when r do", "\n", 9, true}, document_line_count: 12}, __struct__: LXical.Document.Range}, text: "raise(${1:message})", __struct__: LXical.Document.Edit}}, insert_text_format: :snippet, sort_text: "094_raise:001"]>, #Protocol.Types.Completion.Item<[label: "raise(exception, attributes)", kind: :function, text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 148,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.i (truncated)
+00:16:49.471 [info] Completion for %{line: 9, character: 34, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@) do", "\n", 9, true}, document_line_count: 12}
+00:16:49.548 [info] Local completions are []
+00:16:49.548 [info] Emitting completions: []
+00:16:52.132 [info] Emitting completions: []
+00:16:52.654 [info] Completion for %{line: 9, character: 52, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and c do", "\n", 9, true}, document_line_count: 12}
+00:16:52.815 [info] Local completions are [%{name: "col", __struct__: LXical.RemoteControl.Completion.Candidate.Variable}, %{arity: 1, name: "ceil", type: :function, origin: "Kernel", spec: "@spec ceil(number) :: integer", metadata: %{guard: true, since: "1.8.0"}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["number"]}, %{arity: 2, name: "case", type: :macro, origin: "Kernel.SpecialForms", spec: "", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Macro, visibility: :public, argument_names: ["condition", "clauses"]}, %{arity: 1, name: "cond", type: :macro, origin: "Kernel.SpecialForms", spec: "", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Macro, visibility: :public, argument_names: ["clauses"]}]
+00:16:52.919 [info] Emitting completions: [#Protocol.Types.Completion.Item<[label: "col", kind: :variable, detail: "col", text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 168,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 9, character: 51, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and c do", "\n", 9, true}, document_line_count: 12}, end: %{line: 9, character: 52, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and c do", "\n", 9, true}, document_line_count: 12}, __struct__: LXical.Document.Range}, text: "col", __struct__: LXical.Document.Edit}}, sort_text: "099_col"]>, #Protocol.Types.Completion.Item<[label: "ceil(number)", kind: :function, text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 168,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 9, character: 51, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and c do", "\n", 9, true}, document_line_count: 12}, end: %{line: 9, character: 52, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and c do", "\n", 9, true}, document_line_count: 12}, __struct__: LXical.Document.Range}, text: "ceil(${1:number})", __struct__: LXical.Document.Edit}}, insert_text_format: :snippet, sort_text: "094_ceil:001"]>, #Protocol.Types.Completion.Item<[label: "case (case statement)", kind: :class, detail: "", text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 168,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 9, character: 51, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and c do", "\n", 9, true}, document_line_count: 12}, end: %{line: 9, character: 52, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and c do", "\n", 9, true}, document_line_count: 12}, __struct__: LXical.Document.Range}, text: "case $1 do\n  ${2:pattern} -> $0\nend", __struct__: LXical.Document.Edit}}, insert_text_format: :snippet, sort_text: "098_case (case statement)"]>, #Protocol.Types.Completion.Item<[label: "cond (cond statement)", kind: :class, detail: "", text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 168,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 9, character: 51, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and c do", "\n", 9, true}, document_line_count: 12}, end: %{line: 9, character: 52, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and c do", "\n", 9, true}, document_line_count: 12}, __struct__: LXical.Document.Range}, text: "cond do\n  ${1:test} ->\n    $0\nend", __struct__: LXical.Document.Edit}}, insert_text_format: :snippet, sort_text: "098_cond (cond statement)"]>]
+00:16:54.069 [info] Completion for %{line: 9, character: 56, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and col i do", "\n", 9, true}, document_line_count: 12}
+00:16:54.349 [info] Local completions are [%{arity: 1, name: "inspect", type: :function, origin: "Kernel", spec: "@spec inspect(\n  Inspect.t,\n  keyword\n) :: String.t", metadata: %{defaults: 1}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term"]}, %{arity: 2, name: "inspect", type: :function, origin: "Kernel", spec: "@spec inspect(\n  Inspect.t,\n  keyword\n) :: String.t", metadata: %{defaults: 1}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term", "opts"]}, %{arity: 1, name: "is_atom", type: :function, origin: "Kernel", spec: "@spec is_atom(term) :: boolean", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term"]}, %{arity: 1, name: "is_binary", type: :function, origin: "Kernel", spec: "@spec is_binary(term) :: boolean", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term"]}, %{arity: 1, name: "is_bitstring", type: :function, origin: "Kernel", spec: "@spec is_bitstring(term) :: boolean", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term"]}, %{arity: 1, name: "is_boolean", type: :function, origin: "Kernel", spec: "@spec is_boolean(term) :: boolean", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term"]}, %{arity: 1, name: "is_float", type: :function, origin: "Kernel", spec: "@spec is_float(term) :: boolean", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term"]}, %{arity: 1, name: "is_function", type: :function, origin: "Kernel", spec: "@spec is_function(term) :: boolean", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term"]}, %{arity: 2, name: "is_function", type: :function, origin: "Kernel", spec: "@spec is_function(term, non_neg_integer) :: boolean", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term", "arity"]}, %{arity: 1, name: "is_integer", type: :function, origin: "Kernel", spec: "@spec is_integer(term) :: boolean", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term"]}, %{arity: 1, name: "is_list", type: :function, origin: "Kernel", spec: "@spec is_list(term) :: boolean", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term"]}, %{arity: 1, name: "is_map", type: :function, origin: "Kernel", spec: "@spec is_map(term) :: boolean", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term"]}, %{arity: 2, name: "is_map_key", type: :function, origin: "Kernel", spec: "@spec is_map_key(map, term) :: boolean", metadata: %{guard: true, since: "1.10.0"}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["map", "key"]}, %{arity: 1, name: "is_number", type: :function, origin: "Kernel", spec: "@spec is_number(term) :: boolean", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term"]}, %{arity: 1, name: "is_pid", type: :function, origin: "Kernel", spec: "@spec is_pid(term) :: boolean", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term"]}, %{arity: 1, name: "is_port", type: :function, origin: "Kernel", spec: "@spec is_port(term) :: boolean", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term"]}, %{arity: 1, name: "is_reference", type: :function, origin: "Kernel", spec: "@spec is_reference(term) :: boolean", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term"]}, %{arity: 1, name: "is_tuple", type: :function, origin: "Kernel", spec: "@spec is_tuple(term) :: boolean", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Function, visibility: :public, argument_names: ["term"]}, %{arity: 2, name: "if", type: :macro, origin: "Kernel", spec: "", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Macro, visibility: :public, argument_names: ["condition", "clauses"]}, %{arity: 2, name: "in", type: :macro, origin: "Kernel", spec: "", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Macro, visibility: :public, argument_names: ["left", "right"]}, %{arity: 1, name: "is_exception", type: :macro, origin: "Kernel", spec: "", metadata: %{guard: true, since: "1.11.0"}, __struct__: LXical.RemoteControl.Completion.Candidate.Macro, visibility: :public, argument_names: ["term"]}, %{arity: 2, name: "is_exception", type: :macro, origin: "Kernel", spec: "", metadata: %{guard: true, since: "1.11.0"}, __struct__: LXical.RemoteControl.Completion.Candidate.Macro, visibility: :public, argument_names: ["term", "name"]}, %{arity: 1, name: "is_nil", type: :macro, origin: "Kernel", spec: "", metadata: %{guard: true}, __struct__: LXical.RemoteControl.Completion.Candidate.Macro, visibility: :public, argument_names: ["term"]}, %{arity: 1, name: "is_struct", type: :macro, origin: "Kernel", spec: "", metadata: %{guard: true, since: "1.10.0"}, __struct__: LXical.RemoteControl.Completion.Candidate.Macro, visibility: :public, argument_names: ["term"]}, %{arity: 2, name: "is_struct", type: :macro, origin: "Kernel", spec: "", metadata: %{guard: true, since: "1.11.0"}, __struct__: LXical.RemoteControl.Completion.Candidate.Macro, visibility: :public, argument_names: ["term", "name"]}, %{arity: 2, name: "import", type: :macro, origin: "Kernel.SpecialForms", spec: "", metadata: %{}, __struct__: LXical.RemoteControl.Completion.Candidate.Macro, visibility: :public, argument_names: ["module", "opts"]}]
+00:16:54.913 [info] Emitting completions: [#Protocol.Types.Completion.Item<[label: "inspect(term)", kind: :function, text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 172,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 9, character: 55, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and col i do", "\n", 9, true}, document_line_count: 12}, end: %{line: 9, character: 56, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and col i do", "\n", 9, true}, document_line_count: 12}, __struct__: LXical.Document.Range}, text: "inspect(${1:term})", __struct__: LXical.Document.Edit}}, insert_text_format: :snippet, sort_text: "094_inspect:001"]>, #Protocol.Types.Completion.Item<[label: "inspect(term, opts)", kind: :function, text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 172,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 9, character: 55, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and col i do", "\n", 9, true}, document_line_count: 12}, end: %{line: 9, character: 56, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and col i do", "\n", 9, true}, document_line_count: 12}, __struct__: LXical.Document.Range}, text: "inspect(${1:term}, ${2:opts})", __struct__: LXical.Document.Edit}}, insert_text_format: :snippet, sort_text: "094_inspect:002"]>, #Protocol.Types.Completion.Item<[label: "is_atom(term)", kind: :function, text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 172,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 9, character: 55, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and col i do", "\n", 9, true}, document_line_count: 12}, end: %{line: 9, character: 56, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and col i do", "\n", 9, true}, document_line_count: 12}, __struct__: LXical.Document.Range}, text: "is_atom(${1:term})", __struct__: LXical.Document.Edit}}, insert_text_format: :snippet, sort_text: "094_is_atom:001"]>, #Protocol.Types.Completion.Item<[label: "is_binary(term)", kind: :function, text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 172,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        uri: "file:///home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        __struct__: LXical.Document,
+        lines: %Lines<"defmodule IslandEngine.Coordinate do..."(12 lines)>,
+        dirty?: true
+      }
+
+  Stacktrace:
+
+    (elixir 1.15.7) Code.Identifier.inspect_as_atom(LXical.Document)
+    (lx_lexical_shared 0.0.1) lib/lexical/document.ex:23: Inspect.LXical.Document.inspect/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+    (elixir 1.15.7) lib/inspect/algebra.ex:479: Inspect.Algebra.container_each/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:456: Inspect.Algebra.container_doc/6
+    (elixir 1.15.7) lib/inspect/algebra.ex:348: Inspect.Algebra.to_doc/2
+    (elixir 1.15.7) lib/inspect.ex:278: Inspect.List.keyword/2
+
+>, edits: %{range: %{start: %{line: 9, character: 55, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and col i do", "\n", 9, true}, document_line_count: 12}, end: %{line: 9, character: 56, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and col i do", "\n", 9, true}, document_line_count: 12}, __struct__: LXical.Document.Range}, text: "is_binary(${1:term})", __struct__: LXical.Document.Edit}}, insert_text_format: :snippet, sort_text: "094_is_binary:001"]>, #Protocol.Types.Completion.Item<[label: "is_bitstring(term)", kind: :function, text_edit: %{__struct__: LXical.Document.Changes, document: #Inspect.Error<
+  got UndefinedFunctionError with message:
+
+      """
+      function Code.Identifier.inspect_as_atom/1 is undefined or private
+      """
+
+  while inspecting:
+
+      %{
+        version: 172,
+        path: "/home/stryderjzw/islands_engine/lib/islands_engine/coordinate.ex",
+        (truncated)
+00:16:56.131 [info] Completion for %{line: 9, character: 59, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(row, col) when row in(@board_range) and col in(@) do", "\n", 9, true}, document_line_count: 12}
+00:16:56.156 [info] Local completions are []
+00:16:56.156 [info] Emitting completions: []
+00:16:59.813 [info] Emitting completions: []
+00:17:00.658 [info] Completion for %{line: 13, character: 8, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def n", "\n", 13, true}, document_line_count: 14}
+00:17:00.683 [info] Local completions are []
+00:17:00.683 [info] Emitting completions: []
+00:17:06.573 [info] Emitting completions: []
+00:17:10.518 [info] Emitting completions: []
+00:17:10.855 [info] Emitting completions: []
+00:17:14.547 [info] Emitting completions: []
+00:17:17.497 [info] Emitting completions: []
+00:17:19.821 [info] Completion for %{line: 13, character: 45, __struct__: LXical.Document.Position, valid?: true, starting_index: 1, context_line: {:line, "  def new(_row, _col), do: {:error, :invalid}", "\n", 13, true}, document_line_count: 14}
+00:17:19.855 [info] Local completions are []
+00:17:19.855 [info] Emitting completions: []
+00:17:22.315 [info] Compiled islands_engine in 186 ms
