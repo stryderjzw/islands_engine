@@ -53,6 +53,7 @@ defmodule IslandsEngine.Game do
       :err -> {:reply, :err, state_data}
       {:err, :invalid_coordinate} -> {:reply, {:err, :invalid_coordinate}, state_data}
       {:err, :invalid_island_type} -> {:reply, {:err, :invalid_island_type}, state_data}
+      {:err, reason} -> {:reply, {:err, reason}, state_data}
     end
   end
 
