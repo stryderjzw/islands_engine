@@ -5,9 +5,8 @@ defmodule IslandsEngine.Game do
 
   @players [:player1, :player2]
 
-  def start_link(name) when is_binary(name) do
-    GenServer.start_link(__MODULE__, name, [])
-  end
+  def start_link(name) when is_binary(name),
+    do: GenServer.start_link(__MODULE__, name, [])
 
   def init(name) do
     player1 = %{name: name, board: Board.new(), guesses: Guesses.new()}
@@ -15,13 +14,14 @@ defmodule IslandsEngine.Game do
     {:ok, %{player1: player1, player2: player2, rules: %Rules{}}}
   end
 
-  def add_player(game, name) when is_binary(name) do
-    GenServer.call(game, {:add_player, name})
-  end
+  def add_player(game, name) when is_binary(name),
+    do: GenServer.call(game, {:add_player, name})
 
-  def position_island(game, player, key, row, col) when player in @players do
-    GenServer.call(game, {:position_island, player, key, row, col})
-  end
+  def position_island(game, player, key, row, col) when player in @players,
+    do: GenServer.call(game, {:position_island, player, key, row, col})
+
+  def set_islands(game, player) when player in @players,
+    do: GenServer.call(game, {:set_islands, player})
 
   def handle_call({:add_player, name}, _from, state_data) do
     with {:ok, rules} <- Rules.check(state_data.rules, :add_player) do
