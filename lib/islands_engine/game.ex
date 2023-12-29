@@ -57,6 +57,22 @@ defmodule IslandsEngine.Game do
     end
   end
 
+  def handle_call({:set_islands, player}, _from, state_data) do
+    board = player_board(state_data, player)
+
+    with {:ok, rules} <-
+           Rules.check(state_data.rules, {:set_islands, player}),
+         true <-
+           Board.all_islands_positioned?(board) do
+      state_data
+      |> update_rules(rules)
+      |> reply_success({:ok, board})
+    else
+      :err -> {:reply, :err, state_data}
+      false -> {:reply, {:err, :not_all_islands_positioned}, state_data}
+    end
+  end
+
   defp player_board(state_data, player), do: Map.get(state_data, player).board
 
   defp update_board(state_data, player, board) do
