@@ -35,7 +35,7 @@ defmodule IslandsEngine.Game do
       |> update_rules(rules)
       |> reply_success(:ok)
     else
-      :err -> {:reply, :err, state_data, @timeout}
+      :err -> {:reply, {:err, :invalid_state}, state_data, @timeout}
     end
   end
 
